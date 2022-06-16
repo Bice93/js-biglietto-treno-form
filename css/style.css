@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(177, 226, 242);
+}
+
+.count_price, .box_ticket{
+    background-color:whitesmoke;
+    border-radius: 20px;
+}
+
+.ticket{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket{
+    display: flex;
+    height: 150px;
+}
+
+.ticket_left{
+    width: 20%;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.ticket_right{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,20 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Biglietto treno</title>
 </head>
+
 <body>
-    <label for="">Inserisci quanti chilometri devi percorrere</label>
+    <main>
+        <div class="container py-5">
+            <div class="row">
+                <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                <div class="col-12 text-center count_price py-4 px- 5">
+                    
+                    <ul>
+                        <li>
+                            <h6>Nome e Cognome</h6>
+                            <label for="name-user"></label>
+                            <input type="text" placeholder="Inserisci il tuo nome" id="name-user">
+                        </li>
+
+                        <li>
+                            <h6>Km da percorrere</h6>
+                            <label for="km-text"></label>
+                            <input type="text" placeholder="Inserisci km da percorrere" id="km-travel">
+                        </li>
+
+                        <li>
+                            <h6>Età del passeggero</h6>
+                            <label for="age-user"></label>
+                            <input type="text" placeholder="Inserisci la tua età" id="age-user">
+                        </li>
+                    </ul>
+                    <button type="submit" id="btn-send">Invia</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container py-5">
+            <div class="row">
+                <h1 class="text-center">IL TUO BIGLIETTO</h1>
+                <div class="col-12 box_ticket p-3">
+                    <h5>DETTAGLIO PASSEGGERI</h5>
+                    <div class="ticket">
+                        <div class="ticket_left px-3">
+                                <h6>NOME PASSEGGERO</h5>
+                                <p id="name_user_see"> </p>
+                        </div>
+
+                        <div class="ticket_right px-3">
+                            <div>
+                                <h6>Offerta</h6>
+                                <p id="offer_user"></p>
+                            </div>
+                            <div>
+                                <h6>Carrozza</h6>
+                                <p id="number_cab"> </p>
+                            </div>
+                            <div>
+                                <h6>Codice CP</h6>
+                                <p id="code_user"> </p>
+                            </div>
+                            <div>
+                                <h6>Costo Biglietto</h6>
+                                <p id="price"> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+    <!-- *********************************JS******************************* -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- <label for="">Inserisci quanti chilometri devi percorrere</label>
         <input type="text" id="km-travel">
     <label for="">Inserisci l'età del passeggero</label>
         <input type="text" id="age-user">
     <button type="submit" id="btn-send">Invia</button>
-    <p id="price">Il prezzo del biglietto è:</p>
-<!-- *********************************JS******************************* -->
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+    <p id="price"> </p> -->
+
+ <!-- <div class="d-inline">
+                        <label for="name-user">Nome e Cognome</label>
+                        <input type="text" id="name-user">
+                    </div>
+
+                    <div class="d-inline">
+                        <label for="km-text">Inserisci quanti chilometri devi percorrere</label>
+                        <input type="text" id="km-travel">
+                    </div>
+
+                    <div class="d-inline">
+                        <label for="age-user">Inserisci l'età del passeggero</label>
+                        <input type="text" id="age-user">
+                    </div>
+
+                    <button type="submit" id="btn-send">Invia</button> -->
